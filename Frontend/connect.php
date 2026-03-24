@@ -18,4 +18,4 @@ if ($conn->connect_error) {
     echo "Failed to connect DB" . $conn->connect_error;
 >>>>>>> e7e5ebe (Add readme file and Remove unwanted files)
 }
-?>
+?>                                                                                                                                                                                                                                                      

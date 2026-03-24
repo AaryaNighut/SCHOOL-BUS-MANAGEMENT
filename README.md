@@ -1,83 +1,164 @@
-# 📌 School Bus Management System (SBMS)
-
-A professional, web-based management solution designed to streamline school bus operations, monitor routes, and manage student transportation efficiently.
+# 🚌 School Bus Management System (SBMS)
 
 ---
 
-## 📖 Project Description
-The **School Bus Management System** is a robust platform built to solve real-world logistical challenges in school transportation. It allows administrators to manage a fleet of buses, assign drivers to specific routes, and handle student/parent bookings. This system ensures safety, transparency, and organized data management for educational institutions.
+### 📖 Short Description
+The **School Bus Management System** is a robust platform built to solve real-world logistical challenges in school transportation. It allows administrators to manage a fleet of buses, assign drivers to specific routes, and handle student/parent bookings efficiently. This system ensures safety, transparency, and organized data management for educational institutions.
 
-## 🚀 Features
-- **Admin Dashboard**: Centralized control for all operations (Overview, Analytics).
-- **Bus Management**: Add, update, and track bus details (Bus Numbers, Capacities).
-- **Route Management**: Define routes, stops, and departure schedules.
-- **Booking System**: Manage student and parent seat bookings with PNR generation.
-- **Role-Based Access**: Specialized panels for Admins, Drivers, and Parents.
-- **User Management**: Simple registration and login for all stakeholders.
-- **Driver Assignment**: Efficiently link drivers to specific buses and routes.
+---
 
-## 🛠️ Tech Stack
-- **Frontend**: HTML5, CSS3 (Vanilla), JavaScript
-- **Backend**: PHP (Main), Node.js/Express (API support)
-- **Database**: MySQL (MariaDB)
-- **Environment**: XAMPP / WAMP
+### ✨ Features
 
-## 📂 Project Structure
+*   **👑 Admin Dashboard**: Centralized control for all operations with real-time analytics.
+*   **🚐 Bus Management**: Easily add, update, and track bus details (Bus Numbers, Capacities, Status).
+*   **📍 Route Management**: Define routes, specific stops, and optimized arrival/departure schedules.
+*   **👨‍✈️ Driver Assignment**: Efficiently link professional drivers to specific buses and routes.
+*   **🎫 Booking & Assignment**: Manage student and parent seat bookings with automated confirmation.
+*   **👥 User Management**: Specialized panels and roles for Admins, Drivers, and Parents.
+*   **🔐 Secure Authentication**: Robust login and registration system using modern encryption.
+
+---
+
+### 🛠️ Tech Stack
+
+*   **Frontend**: 
+    *   HTML5 & CSS3 (Modern Responsive UI)
+    *   JavaScript (ES6+)
+    *   Google Fonts & FontAwesome Icons
+*   **Backend**: 
+    *   **PHP**: Core business logic and administrative modules
+    *   **Node.js / Express**: RESTful API support and secure authentication
+*   **Database** (This project uses **both** MySQL and MongoDB):
+    *   **MySQL**: Structured data storage for users, buses, and routes.
+    *   **MongoDB**: Flexible storage for API-driven modules (Auth, JWT).
+*   **Tools & Libraries**: 
+    *   XAMPP / WAMP for local environment
+    *   JWT (JSON Web Tokens) for modern auth
+    *   Bcryptjs for password hashing
+
+---
+
+### 📂 Project Structure
+
 ```text
-SCHOOL BUS MANAGEMENT/
-├── Frontend/           # Core PHP & Web application files
-│   ├── Driver/         # Driver-specific views
-│   ├── Parents/        # Parent-specific views
-│   ├── admin_*.php     # Administrative control files
-│   ├── login.php       # User authentication
-│   └── register.php    # User registration
-├── Backend/            # Node.js API and logic (if applicable)
-├── database.php        # Centralized DB connection settings
-├── .gitignore          # Version control exclusions
-└── README.md           # Project documentation
+SCHOOL-BUS-MANAGEMENT/
+├── Backend/                 # Express.js API (Auth, JWT, MongoDB)
+│   ├── controllers/         # Request handlers & logic
+│   ├── models/              # Database schemas (Mongoose)
+│   ├── routes/              # API endpoints
+│   └── index.js             # Server entry point
+├── Frontend/                # PHP Web Application (UI & Core Logic)
+│   ├── Driver/              # Driver dashboard & assigned views
+│   ├── Parents/             # Parent/Student portal
+│   ├── admin_dashboard.php  # Main administrative control
+│   ├── login.php            # PHP-based secure login
+│   └── register.php         # User registration systems
+├── assets/                  # Images, Logos, and CSS styles
+├── database/                # SQL/NoSQL database export scripts
+└── README.md                # Project documentation
 ```
 
-## ⚙️ Installation & Setup Guide
-To run this project locally, follow these steps:
+---
 
-1. **Install XAMPP**: Download and install [XAMPP](https://www.apachefriends.org/) (Version 8.0+ recommended).
-2. **Clone the Project**: Download the project files and place them in the `htdocs` folder of your XAMPP installation (usually `C:\xampp\htdocs\SBMS`).
-3. **Start Servers**: Open the XAMPP Control Panel and start **Apache** and **MySQL**.
-4. **Configure Port**: If you encounter a MySQL port conflict (e.g., port 3306 is in use), change the MySQL port to **3307** in `my.ini` and XAMPP settings.
+### 🚀 Installation & Setup
 
-## 🗄️ Database Setup
-1. Open your browser and go to `http://localhost/phpmyadmin/`.
-2. Create a new database named `school_bus`.
-3. Select the `school_bus` database and click the **Import** tab.
-4. Choose the `school_bus.sql` file (available in your `Downloads` or project root).
-5. Click **Go** to import all tables and sample data.
+Follow these simple steps to get the project running locally:
 
-## ▶️ How to Run the Project
-1. Ensure Apache and MySQL are running in XAMPP.
-2. Open your web browser.
-3. Type the following URL in the address bar:
-   `http://localhost/SBMS/Frontend/login.php`
-4. Use the following **Admin Credentials** for testing:
-   - **Email**: `admin@gmail.com`
-   - **Password**: `Admin@123`
+**1. Clone the Repository**
+```bash
+git clone https://github.com/aaryannighut/SCHOOL-BUS-MANAGEMENT.git
+cd SCHOOL-BUS-MANAGEMENT
+```
 
-## 🖥️ Screenshots
-*(Screenshots of the Admin Dashboard, Booking System, and Login Page will be added here)*
-- ![alt text](<Screenshot 2025-04-18 190907.png>)
-- ![alt text](<Screenshot 2025-04-18 191038.png>)
-- ![alt text](<Screenshot 2025-04-18 191129.png>)
-- ![alt text](<Screenshot 2025-04-18 191257.png>)
-- ![alt text](<Screenshot 2025-04-18 213654.png>)
+**2. Setup Backend (Node.js)**
+*   Navigate to the `Backend` folder.
+*   Install dependencies:
+    ```bash
+    npm install
+    ```
+*   Create a `.env` file and add your `MONGO_URI` and `JWT_SECRET`.
+*   Start the server:
+    ```bash
+    npm start
+    ```
 
-## 🤝 Contributors
-- **Aaryan Nighut** - *Lead Developer*
-- Aarya Nighut 
-- Ekanksh Mohite
-- Rahul Yadav
+**3. Setup Frontend (XAMPP)**
+*   Move the project folder to your XAMPP `htdocs` directory.
+*   Start **Apache** and **MySQL** from the XAMPP Control Panel.
+*   Import the provided database script into **phpMyAdmin**.
 
-## 📜 License
-This project is licensed under the **MIT License** - see the LICENSE file for details.
+**4. Run the Project**
+*   Open your browser and visit: `http://localhost/SCHOOL-BUS-MANAGEMENT/Frontend/login.php`
 
-## 🙌 Acknowledgements
-- Thanks to the open-source community for the icons and fonts (Icons8, Google Fonts, FontAwesome).
-- Special thanks to XAMPP for providing a seamless local development environment.
+---
+
+### 💻 Usage
+
+*   **Admin**: Log in to manage the entire fleet, define routes, assign drivers, and view performance analytics.
+*   **Driver**: Securely log in to see assigned routes, student lists, and bus timing schedules.
+*   **Student/Parent**: Use the portal to view bus details, track assigned routes, and manage personal transport bookings.
+
+---
+
+## 📷 Screenshots
+
+### 📸 Login Page
+![alt text](02_SBMS.png)
+
+### 📊 Admin Dashboard
+![alt text](03_SBMS.png)
+
+### 👨‍✈️ Driver Portal
+![alt text](04_SBMS.png)
+
+### 🚚 Driver Dashboard
+![alt text](05_SBMS.png)
+
+### 📍 Route Details
+![alt text](<../CollegeProjects/Project/SCHOOL BUS MANAGEMENT/06_SBMS.png>)
+
+---
+
+### 🔐 Authentication
+
+The system implements a dual-layer authentication strategy:
+*   **PHP Session Management**: Used for maintaining user states within the core application.
+*   **JWT (JSON Web Tokens)**: Used for secure, stateless communication between the frontend and the Express API.
+*   **Password Hashing**: All passwords are encrypted using **Bcrypt** to ensure maximum security.
+
+---
+
+### 🌍 Future Enhancements
+
+*   🛰️ **Real-time GPS Tracking**: Integration with Google Maps API for live location updates.
+*   📱 **Dedicated Mobile App**: A React Native app for parents to receive push notifications.
+*   📧 **Automated Notifications**: SMS and Email alerts for bus delays or emergencies.
+*   💳 **Online Fee Payment**: Integration with Stripe/Razorpay for transport fees.
+
+---
+
+### 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+
+### 👨‍💻 Author
+
+*   SBMS Development Team
+
+    Aaryan Nighut<br>
+    Aarya Nighut<br>
+    Ekanksh Mohite<br>
+    Rahul Yadav<br>
+
+*   **GitHub**: [aaryannighut](https://github.com/aaryannighut)
+
+---
+*Made with ❤️ for better school transportation.*
