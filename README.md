@@ -115,7 +115,7 @@ cd SCHOOL-BUS-MANAGEMENT
 ![alt text](05_SBMS.png)
 
 ### 📍 Route Details
-![alt text](<../CollegeProjects/Project/SCHOOL BUS MANAGEMENT/06_SBMS.png>)
+![alt text](06_SBMS.png)
 
 ---
 
