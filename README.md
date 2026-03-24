@@ -108,10 +108,10 @@ cd SCHOOL-BUS-MANAGEMENT
 ### 📊 Admin Dashboard
 ![alt text](03_SBMS.png)
 
-### 👨‍✈️ Driver Portal
+### 👨‍✈️ Driver Dashboard
 ![alt text](04_SBMS.png)
 
-### 🚚 Driver Dashboard
+### 🚚 Parent Dashboard
 ![alt text](05_SBMS.png)
 
 ### 📍 Route Details
