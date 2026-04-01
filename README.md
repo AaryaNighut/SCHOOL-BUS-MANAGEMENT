@@ -66,7 +66,7 @@ Follow these simple steps to get the project running locally:
 
 **1. Clone the Repository**
 ```bash
-git clone https://github.com/aaryannighut/SCHOOL-BUS-MANAGEMENT.git
+git clone https://github.com/aaryanighut/SCHOOL-BUS-MANAGEMENT.git
 cd SCHOOL-BUS-MANAGEMENT
 ```
 
@@ -158,7 +158,7 @@ Contributions are what make the open-source community such an amazing place!
     Ekanksh Mohite<br>
     Rahul Yadav<br>
 
-*   **GitHub**: [aaryannighut](https://github.com/aaryannighut)
+*   **GitHub**: [AaryaNighut](https://github.com/AaryaNighut)
 
 ---
 *Made with ❤️ for better school transportation.*
