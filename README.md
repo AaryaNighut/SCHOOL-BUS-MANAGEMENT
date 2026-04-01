@@ -66,7 +66,7 @@ Follow these simple steps to get the project running locally:
 
 **1. Clone the Repository**
 ```bash
-git clone https://github.com/aaryanighut/SCHOOL-BUS-MANAGEMENT.git
+git clone https://github.com/AaryaNighut/AlertExa.git
 cd SCHOOL-BUS-MANAGEMENT
 ```
 
